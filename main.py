@@ -55,6 +55,8 @@ class Sorting:
                     list_bilangan[c_all] = potongan_kanan[c_kanan]
                     c_kanan = c_kanan + 1
                 c_all = c_all + 1
+            print('Proses Merge:', list_bilangan)
+            print()
 
     # Quick Sort
     def partition(self, l, bawah, atas):
@@ -114,8 +116,9 @@ class Sorting:
                 print("**********Algortima Merge Sort********")
                 angka = [6, 5, 3, 1, 8, 7, 2, 4]
                 print("Sebelum Sort: ", angka)
+                print()
                 self.merge_sort(angka)
-                print("Setelah Sort: ", angka)
+                print("Setelah Sort Penuh: ", angka)
                 x = input("")
             elif(pilihan == "4"):
                 print("**********Algortima Quick Sort********")
