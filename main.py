@@ -1,16 +1,18 @@
 # <++++++++++++++++++++++++++++++++++++++++++++>
-# Nama Kelompok:
-# 1. I Komang Hari Sulaksana Putra (20101171)
-# 2. I Made Adrian Astalina Pramana (20101282)
-# 3. I Made Agus Ari Subawa (21101108)
-# Kelas: AC
+# *Nama Kelompok:
+# *1. I Komang Hari Sulaksana Putra (20101171)
+# *2. I Made Adrian Astalina Pramana (20101282)
+# *3. I Made Agus Ari Subawa (21101108)
+# *Kelas: AC
 # <++++++++++++++++++++++++++++++++++++++++++++>
 # * Source: https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
-# Program Sorting
+# <|================>
+# <|Program Sorting|>
+# <|================>
 
 
 class Sorting:
-    # Selection Sort
+    # * Selection Sort
     # Membuat Constructor berupa parameternya untuk menampung pos berupa connector.
     def selection_sort(self, angka):
         # Melakukan perulangan dengan panjang dan jangkauan (scope) yang ditampung melalui variabel angka, yang mana nilai maksimum di set 0 sebagai nilai default dalam indeks.
@@ -26,7 +28,7 @@ class Sorting:
         # Mengembalikan nilai berupa hasil block event list yang telah didefinisikan dan akan ditampilkan dalam console log seperti terminal / command prompt.
         return angka
 
-    # Bubble Sort
+    # *Bubble Sort
     # Membuat Constructor metode bubble sort, yang terdiri dari 2 parameter.
     def bubble_sort(self, angka):
         # Melakukan perulangan dengan fungsi range dan menghitung lenght dari variabel angka dengan valuenya.
@@ -39,7 +41,7 @@ class Sorting:
             print("Proses Bubble", angka)
             print()
 
-    # Merge Sort
+    # *Merge Sort
     # Membuat Constructor merge sort yang terdiri dari 2 parameter
     def merge_sort(self, list_bilangan):
         # Mendeklarasikan variabel kemudian di assign ke fungsi len untuk menampilkan panjang dari variabel yang diberikan expression.
@@ -76,7 +78,7 @@ class Sorting:
             print('Proses Merge:', list_bilangan)
             print()
 
-    # Quick Sort
+    # *Quick Sort
     # Membuat Constructor partition untuk menampung 4 parameter yang berfungsi sebagai blueprint (prototype dalam fungsi quick sort)
     def partition(self, l, bawah, atas):
         pivot = l[bawah]  # Bilangan pertama pada list sebagai pivot
@@ -104,10 +106,11 @@ class Sorting:
                     "Elemen yang diperiksa lebih besar atau sama dengan pivot, lanjutkan ke indeks berikutnya")
         l[pos_batas-1], l[bawah] = l[bawah], l[pos_batas-1]
         return pos_batas
-        # Quick Sort merupakan kategori divide & conquer secara rekursif
-        # Menggunakan konsep rekursif yang berfungsi untuk pemanggilan partition atau untaian nilai secara terpisah dan ditetapkan sebagai pembatas (pivot).
+        # * Quick Sort merupakan kategori divide & conquer secara rekursif
+        # *Menggunakan konsep rekursif yang berfungsi untuk pemanggilan partition atau untaian nilai secara terpisah dan ditetapkan sebagai pembatas (pivot).
+        # *Partitioning dengan pivot yang dipilih dari awal elemen (angka n). Perlu diperhatikan bahwa setelah partitioning, seluruh angka yang lebih kecil dari m berpindah ke sisi kiri dan sebaliknya. Pada proses ini, tidak ada jaminan bahwa elemen di kanan maupun kiri pivot terurut (sorted).
 
-    # Child Class Quick Sort dari fungsi Partition dengan mewariskan parameter dari parent classnya. Konsep ini disebut pewarisan(Inheritance).
+    # *Child Class Quick Sort dari fungsi Partition dengan mewariskan parameter dari parent classnya. Konsep ini disebut pewarisan(Inheritance).
     def quicksort(self, l, bawah, atas):
         # Jika seluruh elemen yang nilainya lebih kecil sama dengan dari pivot, maka pada sisi yang berlawanan dengan nilai lebih besar dari pivot akan mengeksekusi bilangan yang akan diurutkan.
         # Pengkondisian ini dilakukan berulang-ulang hingga hanya tersisa satu elemen untuk partition (pemisahan), yang tentunya sudah tidak diperlukan lagi
@@ -164,6 +167,7 @@ class Sorting:
             else:
                 # Jika navigator yang dicari tidak terdapat dalam console, maka akan dikeluarkan dalam program, yang merujuk pada path/directory komputer masing-masing.
                 pilih = "n"
+                print("<!---------List Menu Tidak Tersedia!---------!>")
 
 
 # Melakukan operator assigement == , yang mana merupakan operator untuk mendefinisikan sama persis dari parameter yang digunakan, agar dapat menampilkan fungsi mainmenu dengan  struktur fungsi Sorting yang relevan.
