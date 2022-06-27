@@ -13,6 +13,7 @@
 
 class Sorting:
     # * Selection Sort
+    # * Def mendefenisikan sebuah fungsi atau method.
     # Membuat Constructor berupa parameternya untuk menampung pos berupa connector.
     def selection_sort(self, angka):
         # Melakukan perulangan dengan panjang dan jangkauan (scope) yang ditampung melalui variabel angka, yang mana nilai maksimum di set 0 sebagai nilai default dalam indeks.
@@ -165,7 +166,7 @@ class Sorting:
                 print("Setelah Sort: ", angka)
                 x = input("")
             else:
-                # Jika navigator yang dicari tidak terdapat dalam console, maka akan dikeluarkan dalam program, yang merujuk pada path/directory komputer masing-masing.
+                # Jika pointer / navigator yang dicari tidak terdapat dalam console (terminal / CLI), maka akan dikeluarkan dalam program, yang merujuk pada path/directory komputer masing-masing.
                 pilih = "n"
                 print("<!---------List Menu Tidak Tersedia!---------!>")
 
