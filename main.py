@@ -112,10 +112,10 @@ class Sorting:
         l[pos_batas-1], l[bawah] = l[bawah], l[pos_batas-1]
         return pos_batas
         # * Quick Sort menerapkan kategori divide & conquer secara rekursif.
-        # *+ Menggunakan konsep rekursif yang berfungsi untuk pemanggilan partition atau untaian nilai secara terpisah dan ditetapkan sebagai pembatas (pivot).
         # *+ Partitioning dengan pivot yang dipilih dari awal elemen (angka n). Perlu diperhatikan bahwa setelah partitioning, seluruh angka yang lebih kecil dari m berpindah ke sisi kiri dan sebaliknya. Pada proses ini, tidak ada jaminan bahwa elemen di kanan maupun kiri pivot terurut (sorted).
 
-    # *- Child Class Quick Sort dari fungsi Partition dengan mewariskan parameter dari parent classnya. Konsep ini disebut pewarisan(Inheritance).
+    # * Child Class Quick Sort dari fungsi Partition dengan mewariskan parameter dari parent classnya. Konsep ini disebut pewarisan(Inheritance).
+    # ** Menggunakan konsep rekursif yang berfungsi untuk pemanggilan partition atau untaian nilai secara terpisah dan ditetapkan sebagai pembatas (pivot).
     def quicksort(self, l, bawah, atas):
         # Jika seluruh elemen yang nilainya lebih kecil sama dengan dari pivot, maka pada sisi yang berlawanan dengan nilai lebih besar dari pivot akan mengeksekusi bilangan yang akan diurutkan.
         # Pengkondisian ini dilakukan berulang-ulang hingga hanya tersisa satu elemen untuk partition (pemisahan), yang tentunya sudah tidak diperlukan lagi
