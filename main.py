@@ -14,6 +14,7 @@
 class Sorting:
     # * Selection Sort
     # * Def mendefenisikan sebuah fungsi atau method.
+    # ** Algoritma selection sort, sesuai dengan namanya (select = pilih), merupakan teknik pengurutan yang dilakukan dengan memilih nilai terbesar/terkecil dari sekumpulan nilai kemudian meletakkannya pada posisi ujung kumpulan nilai tersebut.
     # Membuat Constructor berupa parameternya untuk menampung pos berupa connector.
     def selection_sort(self, angka):
         # Melakukan perulangan dengan panjang dan jangkauan (scope) yang ditampung melalui variabel angka, yang mana nilai maksimum di set 0 sebagai nilai default dalam indeks.
@@ -30,6 +31,7 @@ class Sorting:
         return angka
 
     # *Bubble Sort
+    # ** Algoritma bubble sort merupakan salah satu teknik pengurutan sederhana, yang dilakukan dengan menelusuri sebuah list, membandingkan elemen yang berdekatan, kemudian menukarnya apabila posisinya tidak tepat.
     # Membuat Constructor metode bubble sort, yang terdiri dari 2 parameter.
     def bubble_sort(self, angka):
         # Melakukan perulangan dengan fungsi range dan menghitung lenght dari variabel angka dengan valuenya.
@@ -43,6 +45,7 @@ class Sorting:
             print()
 
     # *Merge Sort
+    # ** Algoritma Merge sort merupakan pengurutan dengan cara menggabungkan. Sesuai dengan namanya, algoritma pengurutan merge sort melibatkan penggabungan secara berulang-ulang hingga membentuk rangkaian nilai yang terurut.
     # Membuat Constructor merge sort yang terdiri dari 2 parameter
     def merge_sort(self, list_bilangan):
         # Mendeklarasikan variabel kemudian di assign ke fungsi len untuk menampilkan panjang dari variabel yang diberikan expression.
@@ -80,6 +83,7 @@ class Sorting:
             print()
 
     # *Quick Sort
+    # ** Algoritma quick sort adalah algoritma pengurutan yang menggunakan proses pemisahan (partitioning) berdasarkan suatu nilai pembatas (pivot) secara berulang-ulang hingga suatu untaian nilai menjadi terurut.
     # Membuat Constructor partition untuk menampung 4 parameter yang berfungsi sebagai blueprint (prototype dalam fungsi quick sort)
     def partition(self, l, bawah, atas):
         pivot = l[bawah]  # Bilangan pertama pada list sebagai pivot
@@ -107,11 +111,11 @@ class Sorting:
                     "Elemen yang diperiksa lebih besar atau sama dengan pivot, lanjutkan ke indeks berikutnya")
         l[pos_batas-1], l[bawah] = l[bawah], l[pos_batas-1]
         return pos_batas
-        # * Quick Sort merupakan kategori divide & conquer secara rekursif
-        # *Menggunakan konsep rekursif yang berfungsi untuk pemanggilan partition atau untaian nilai secara terpisah dan ditetapkan sebagai pembatas (pivot).
-        # *Partitioning dengan pivot yang dipilih dari awal elemen (angka n). Perlu diperhatikan bahwa setelah partitioning, seluruh angka yang lebih kecil dari m berpindah ke sisi kiri dan sebaliknya. Pada proses ini, tidak ada jaminan bahwa elemen di kanan maupun kiri pivot terurut (sorted).
+        # * Quick Sort menerapkan kategori divide & conquer secara rekursif.
+        # *+ Menggunakan konsep rekursif yang berfungsi untuk pemanggilan partition atau untaian nilai secara terpisah dan ditetapkan sebagai pembatas (pivot).
+        # *+ Partitioning dengan pivot yang dipilih dari awal elemen (angka n). Perlu diperhatikan bahwa setelah partitioning, seluruh angka yang lebih kecil dari m berpindah ke sisi kiri dan sebaliknya. Pada proses ini, tidak ada jaminan bahwa elemen di kanan maupun kiri pivot terurut (sorted).
 
-    # *Child Class Quick Sort dari fungsi Partition dengan mewariskan parameter dari parent classnya. Konsep ini disebut pewarisan(Inheritance).
+    # *- Child Class Quick Sort dari fungsi Partition dengan mewariskan parameter dari parent classnya. Konsep ini disebut pewarisan(Inheritance).
     def quicksort(self, l, bawah, atas):
         # Jika seluruh elemen yang nilainya lebih kecil sama dengan dari pivot, maka pada sisi yang berlawanan dengan nilai lebih besar dari pivot akan mengeksekusi bilangan yang akan diurutkan.
         # Pengkondisian ini dilakukan berulang-ulang hingga hanya tersisa satu elemen untuk partition (pemisahan), yang tentunya sudah tidak diperlukan lagi
