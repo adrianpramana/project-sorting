@@ -141,14 +141,14 @@ class Sorting:
             print("=========================")
             pilihan = str(input(("Silahkan masukan pilihan algoritma Anda: ")))
             if(pilihan == "1"):
-                angka = [15, 16, 2, 97, 100, 78, 25, 10, 1, 17]
+                angka = [3, 2, 4, 1, 10, 9, 6]
                 print("<+++++++++++++Algortima Selection Sort+++++++++++++>")
                 print("Sebelum Sort: ", angka)
                 self.selection_sort(angka)
                 print("Setelah Sort: ", angka)
                 x = input("")
             elif(pilihan == "2"):
-                angka = [35, 24, 49, 30, 17, 37, 12, 22, 58, 36, 29, 23]
+                angka = [3, 2, 4, 1, 10, 9, 6]
                 print("<+++++++++++++Algortima Bubble Sort+++++++++++++>")
                 print("Sebelum Sort: ", angka)
                 self.bubble_sort(angka)
